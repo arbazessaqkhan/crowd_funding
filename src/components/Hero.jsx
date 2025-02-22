@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import bgHero from "../assets/bg-hero.jpg"
 // import { Dialog, DialogPanel } from '@headlessui/react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -7,10 +8,16 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
-      <div className="px-6 pt-7 lg:px-8">
+    <section
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${bgHero})`,
+        backgroundAttachment: "fixed",
+      }}
+    >
+      <div className="px-6 pt-7 lg:px-8 bg-white/50 backdrop-blur-sm">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-       
+
           <div className="text-center">
             <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
               🌍 Make a Difference Today – Help Us Change Lives!
@@ -44,6 +51,6 @@ export default function Hero() {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

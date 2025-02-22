@@ -3,12 +3,12 @@ import logo from "../assets/UnityFundX.png"
 export default function Header() {
  
   return (
-    <header class="shadow mb-2">
+    <header class="shadow">
   <div class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
   <a href="#" className="flex items-center space-x-2 font-black">
   <img src={logo} alt="UnityFundX logo" className="w-12 h-auto" />
   <div className="flex align-top">
-    <span className="font-normal mr-2 text-blue-800">UnityFund</span>
+    <span className="font-normal mr-2 text-blue-800">UnityFundX</span>
     {/* <span className="font-light whitespace-nowrap flex-wrap text-sm text-blue-600">contribute towards humanity</span> */}
   </div>
 </a>
