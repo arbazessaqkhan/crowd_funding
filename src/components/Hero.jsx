@@ -5,7 +5,6 @@ import bgHero from "../assets/bg-hero.jpg"
 
 
 export default function Hero() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <section
@@ -15,7 +14,7 @@ export default function Hero() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="px-6 pt-7 lg:px-8 bg-white/50 backdrop-blur-sm">
+      <div className="px-6 lg:px-8 bg-white/50 backdrop-blur-sm">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
           <div className="text-center">
@@ -28,11 +27,11 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                class="rounded-md border-2 border-blue-600 bg-blue-600 px-6 py-1 font-medium text-white transition-colors hover:bg-white hover:text-blue-600"
+                class="rounded-md bg-blue-600 px-6 py-2 font-medium text-white transition-colors hover:bg-white hover:text-blue-600 border-2 border-blue-600"
               >
                 Donate Now
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">
+              <a href="#" className="text-sm/6 font-medium text-gray-900">
                 Start a Fundraiser <span aria-hidden="true">→</span>
               </a>
             </div>
