@@ -29,7 +29,7 @@ export default function HowItWorks() {
     <div className="p-16">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-gray-900">How It Works</h2>
-        <p className="mt-4 text-lg text-gray-700">
+        <p className="mt-8 text-lg text-gray-700">
           Our platform is designed to make fundraising simple and effective. Follow these steps to get started.
         </p>
 

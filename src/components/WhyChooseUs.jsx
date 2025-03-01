@@ -28,14 +28,14 @@ export default function WhyChooseUs(){
                 <h2 className="text-4xl font-bold text-gray-900">
                 Why Choose Us?
                 </h2>
-                <p className="mt-4 text-lg text-gray-700">
+                <p className="mt-8 text-lg font-medium text-gray-700">
                 We make fundraising easy, transparent, and impactful. Here's why thousands trust us.
                 </p>
             </div>
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
                 {benefits.map((benefit, idx) => (
-                    <div key={idx} className="flex items-start gap-4 p-4 bg-gray-100 rounded-lg  shadow-md hover:scale-105 cursor-pointer transition-transform duration-300">
+                    <div key={idx} className="flex items-start gap-4 py-10 px-8 bg-gray-100 rounded-lg  shadow-md hover:scale-105 cursor-pointer transition-transform duration-300">
                         <CheckCircleIcon className=" min-w-8 w-8 text-blue-600 sm:w-10" />
 
                         <div>
