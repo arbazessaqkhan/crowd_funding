@@ -25,18 +25,18 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="bg-gray-100 py-16 px-6">
-    <div className="p-16">
+    <section className="bg-teal-200 py-16 px-6">
+    <div className="max-w-6xl text-center px-8 py-16 mx-auto">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900">How It Works</h2>
-        <p className="mt-8 text-lg text-gray-700">
+        <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">How It Works</h2>
+        <p className="mt-4 text-xl/8 text-gray-700 from-neutral-300">
           Our platform is designed to make fundraising simple and effective. Follow these steps to get started.
         </p>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
-            <div key={index} className="p-6 bg-white rounded-lg shadow-md text-center hover:scale-105 cursor-pointer transition-transform duration-300">
-              <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">
+            <div key={index} className="p-6 bg-teal-100 rounded-lg shadow-md text-center hover:scale-105 cursor-pointer transition-transform duration-300">
+              <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-gray-700 text-teal-100 text-xl font-bold">
                 {step.step}
               </div>
               <h3 className="text-xl font-semibold text-gray-900">{step.title}</h3>

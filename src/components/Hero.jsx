@@ -27,7 +27,7 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                class="rounded-md bg-blue-600 px-6 py-2 font-medium text-white transition-colors hover:bg-white hover:text-blue-600 border-2 border-blue-600"
+                class="rounded-md bg-blue-600 px-6 py-2 font-medium text-white transition-colors hover:bg-teal-100 hover:text-blue-600 border-2 border-blue-600"
               >
                 Donate Now
               </a>

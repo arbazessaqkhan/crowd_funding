@@ -10,6 +10,7 @@ import {
   Input,
   Checkbox,
 } from "@material-tailwind/react";
+import GoogleSignin from "./GoogleSignin";
  
 export function LoginModal({isOpen, handler}) {
 
@@ -26,7 +27,7 @@ export function LoginModal({isOpen, handler}) {
         handler={handler}
         className="bg-transparent shadow-none"
       >
-        <Card className="mx-auto w-full max-w-[24rem]">
+        <Card className="mx-auto w-full max-w-[24rem] bg-opacity-40 bg-teal-200">
           <CardBody className="flex flex-col gap-4">
             <Typography variant="h4" color="blue-gray">
               Sign In
@@ -50,23 +51,19 @@ export function LoginModal({isOpen, handler}) {
               <Checkbox label="Remember Me" />
             </div>
           </CardBody>
+          
           <CardFooter className="pt-0">
-            <Button variant="gradient" onClick={handler} fullWidth>
+            <Button variant="" onClick={handler} fullWidth
+            className="
+            bg-teal-100
+            border-blue-600 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white">
               Sign In
             </Button>
-            <Typography variant="small" className="mt-4 flex justify-center">
-              Don&apos;t have an account?
-              <Typography
-                as="a"
-                href="#signup"
-                variant="small"
-                color="blue-gray"
-                className="ml-1 font-bold"
-                onClick={handler}
-              >
-                Sign up
-              </Typography>
-            </Typography>
+            <Typography className="justify-center pt"variant="h6">OR</Typography>
+            <div className="">
+            <GoogleSignin /> {/* Google Sign-In Button */}
+          </div>
+            
           </CardFooter>
         </Card>
       </Dialog>

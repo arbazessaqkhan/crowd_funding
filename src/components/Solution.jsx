@@ -4,34 +4,38 @@ import proudToDonate1 from "../assets/proudToDonate1.jpg"
 import proudToDonate2 from "../assets/proudToDonate2.jpg"
 import proudToDonate3 from "../assets/proudToDonate3.jpg"
 
+
 export default function Solution() {
   return (
-    <section className="bg-gray-100 py-16 px-6">
-      <div className="max-w-6xl mx-auto text-center px-16 py-16">
-        <h2 className="text-4xl font-bold text-gray-900">Let's work together for the solution!</h2>
+    <section className="bg-teal-200 py-16">
+      <div className="max-w-6xl text-center px-8 py-16 mx-auto">
+        <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Let's work together for the solution!</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 mt-8">
           <div className="flex flex-col items-center text-center">
-            <img src={nobleCause} alt="Noble Cause" className="w-full h-64 object-cover rounded-lg shadow-md"/>
-            <p className="mt-4 text-lg font-medium text-gray-700">
+            <img src={nobleCause} 
+            loading="lazy"
+            alt="Noble Cause" className="w-full h-64 object-cover rounded-lg shadow-md"/>
+            <p className="mt-4 text-xl/8 text-gray-700 from-neutral-300">
             Donate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa voluptates architecto magnam enim eaque id quae, aut dolorum sed!
             </p>
           </div>
           <div>
-            <img src={proudToDonate1} alt="Noble Cause" className="w-full h-64 object-cover rounded-lg shadow-md grayscale"/>
-            <p className="mt-4 text-lg font-medium text-gray-700">
+            <img src={proudToDonate1}
+             alt="Noble Cause" className="w-full h-64 object-cover rounded-lg shadow-md grayscale"/>
+            <p className="mt-4 text-xl/8 text-gray-700 from-neutral-300">
             Donate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa voluptates architecto magnam enim eaque id quae, aut dolorum sed!
             </p>
           </div>
           <div>
             <img src={proudToDonate3} alt="Noble Cause" className="w-full h-64 object-cover rounded-lg shadow-md"/>
-            <p className="mt-4 text-lg font-medium text-gray-700">
+            <p className="mt-4 text-xl/8 text-gray-700 from-neutral-300">
             Donate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa voluptates architecto magnam enim eaque id quae, aut dolorum sed!
             </p>
           </div>
           <div>
             <img src={proudToDonate2} className="w-full h-64  object-cover grayscale rounded-lg shadow-md"/>
-            <p className="mt-4 text-lg font-medium text-gray-700">
+            <p className="mt-4 text-xl/8 text-gray-700 from-neutral-300">
             Donate Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa voluptates architecto magnam enim eaque id quae, aut dolorum sed!
             </p>
           </div>

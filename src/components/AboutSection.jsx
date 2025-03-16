@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import Solution from './Solution'
 
 export default function AboutSection() {
   return (
     <React.Fragment>
-    <section className="bg-gray-100 py-16 px-6">
-      <div className="max-w-6xl mx-auto text-center px-16 py-16">
-        <h2 className="text-4xl font-bold text-gray-900">Who We Are</h2>
-        <p className="mt-8 text-lg text-gray-700">
+    <section className="bg-teal-100 py-16">
+      <div className="max-w-6xl text-center px-8 py-16 mx-auto">
+        <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">What is UnityFundX</h2>
+        <p className="mt-4 text-xl/8 text-gray-700 from-neutral-300">
           UnityFundX is a platform dedicated to empowering individuals and communities by providing a seamless way to raise and contribute funds for meaningful causes.
           Whether it's for medical assistance, education, disaster relief, or community projects, 
           we believe in the power of collective giving.

@@ -8,7 +8,6 @@ import AboutSection from './components/AboutSection'
 import WhyChooseUs from './components/WhyChooseUs'
 import HowItWorks from './components/HowItWorks'
 import Footer from './components/Footer'
-import { SignupModal } from './components/SignupModal'
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
     <WhyChooseUs />
     <HowItWorks />
     <Footer />
-    <SignupModal/>
     </>
   );
 }

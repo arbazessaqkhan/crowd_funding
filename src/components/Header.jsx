@@ -2,14 +2,18 @@ import React from "react";
 import logo from "../assets/UnityFundX.png";
 import { Link } from "react-router-dom";
 import { LoginModal } from "./LoginModal";
+import { FundraiserRegister } from "./FundraiserRegister";
 
 export default function Header() {
-  const [open, setOpen] = React.useState(false);
+  const [openLogin, setOpenLogin] = React.useState(false);
 
-  const handleOpen = () => setOpen((cur) => !cur);
+  const [openRegister, setOpenRegister] = React.useState(false);
+
+  const handleOpenLogin = () => setOpenLogin((cur) => !cur);
+  const handleOpenRegister = () => setOpenRegister((cur) => !cur);
 
   return (
-    <header className="shadow">
+    <header className="shadow bg-teal-200">
       <div className="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
         <a href="#" className="flex items-center space-x-2 font-black">
           <img src={logo} alt="UnityFundX logo" className="w-12 h-auto" />
@@ -32,11 +36,13 @@ export default function Header() {
             <li className="text-gray-600 md:mr-12 hover:text-blue-600"><Link to="/about">About us</Link></li>
             <li className="text-gray-600 md:mr-12 hover:text-blue-600"><Link to="/why-choose-us">Support</Link></li>
             <li className="text-gray-600 md:mr-12 hover:text-blue-600">
-              <button className="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white" onClick={handleOpen}>Login</button>
+              <button className="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white"
+               onClick={handleOpenLogin}>Login</button>
             </li>
             <li className="text-gray-600 md:mr-12 hover:text-blue-600">
-              <button className="rounded-md border-2 border-blue-600 bg-blue-600 px-6 py-1 font-medium text-white transition-colors hover:bg-white hover:text-blue-600">
-                Sign Up
+              <button className="rounded-md border-2 border-blue-600 bg-blue-600 px-6 py-1 font-medium text-white transition-colors hover:bg-teal-200 hover:text-blue-600"
+              onClick={handleOpenRegister}>
+                Start a Fundraiser
               </button>
             </li>
           </ul>
@@ -44,7 +50,9 @@ export default function Header() {
       </div>
 
       {/* Add LoginModal here */}
-      <LoginModal isOpen={open} handler={handleOpen} />
+      <LoginModal isOpen={openLogin} handler={handleOpenLogin} />
+
+      <FundraiserRegister isOpen={openRegister} handler={handleOpenRegister} />
     </header>
   );
 }
